@@ -126,6 +126,10 @@ static double prim(void) {
 		const double val = unary();
 		if (strcmp(name.str, "sin") == 0)
 			return sin(val);
+		if (strcmp(name.str, "cos") == 0)
+			return cos(val);
+		if (strcmp(name.str, "tan") == 0)
+			return tan(val);
 		else {
 			printf("%d: unknown function %s\n", name.pos, name.str);
 			exit(1);
